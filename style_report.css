@@ -1,0 +1,29 @@
+body{
+  background:white;
+}
+#container{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:500%;
+    line-height: 200%;
+background-color: #fff9d0;
+}
+.header img {
+	margin-left: 30px;
+  float: left;
+  width: 150px;
+  height: 150px;
+  background: #555;
+
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+   font-family:helvetica;
+  
+
+}
+

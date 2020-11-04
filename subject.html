@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subject Submission Form</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style_register.css"> -->
+	<link href="style_subject.css" rel="stylesheet" type="text/css" media="all"/>
+		<style>
+/*	table, td, th {
+	    border: 1px solid black;
+	}*/
+
+
+	
+	#table1 {
+	    border-collapse: separate;
+	    border-spacing: 10px;
+	}
+
+</style>
+</head>
+<body>
+	<script>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+</script>
+
+	<div class="main">
+			<div class="main-section agile">
+				<div class="login-form">
+
+			<!-- <div class="content-w3ls">
+	        <div class="form-w3ls">	 -->	
+				
+				<!-- <form action="login" method="post"> -->
+				<center>
+					<h2>Subject Entry Page </h2>
+					<form action="insert_subject.jsp"> 
+						<!-- <div class="content-wthree1">
+						<div class="grid-agileits1">
+						<div class="form-control"> -->
+					<table id="table1">
+						<tr>
+							<td>Course: </td>
+							<td><input type="text" name="course"></td>
+						</tr>
+						<tr>
+							<td>Branch: </td>
+							<td><input type="text" name="branch"></td>
+						</tr>
+						<tr>
+							<td>Semester: </td>
+							<td>
+								<select name="semester" >
+									<option>-select-</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>SUB 1: </td>
+							<td><input type="text" name="sub1"></td>
+						</tr>	
+						<tr>
+							<td>SUB 2: </td>
+							<td><input type="text" name="sub2"></td>
+						</tr>
+
+						<tr>
+							<td>SUB 3:</td>
+							<td><input type="text" name="sub3" ></td>
+						</tr>
+						<tr>
+							<td>SUB 4:</td>
+							<td><input type="text" name="sub4" ></td>
+							<!-- <td>
+								<select name="branch">
+									<option>-select-</option>
+									<option>Computer Science</option>
+								</select>
+							</td> -->
+						</tr>
+						
+						<tr>
+							<td>SUB 5:</td>
+							<td><input type="text" name="sub5"></td>>
+						</tr>
+						<tr>
+							<!-- <td></td> -->
+							<td>
+							    <input type="reset" value="CANCEL">
+							    	<!-- <div class="content-wthree4">	
+									<div class="form-control">
+										<input type="submit" class="register" value="Submit">
+										<input type="reset" class="reset" value="Reset">
+										<div class="clear"></div>
+									</div></div> -->
+							    </td>
+							    <td><input type="submit" value="SUBMIT"></td>
+						</tr>
+
+					</table>
+				<!-- </div></div></div> -->
+				</form>
+	
+				</center>
+			</div>
+		</div>		
+	</div>			
+</body>
+
+</html>

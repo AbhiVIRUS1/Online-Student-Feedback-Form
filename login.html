@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style_login.css">
+	<!--<link href="css/font-awesome.css" rel="stylesheet"><!-- Font-awesome-CSS --> 
+	<!-- <link href="css/style.css" rel='stylesheet' type='text/css'/> --><!-- style.css --> 
+	<script>
+	    $(document).ready(function() {
+	        function disableBack() { window.history.forward() }
+
+	        window.onload = disableBack();
+	        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+	    });
+	</script>
+	
+</head>
+<body>
+	
+	<!-- <br><br><br><br> -->
+	<center>
+		<h1 >VSSUT STUDENT FEEDBACK APPLICATION</h1>
+		<div><h2>Login Here......</h2></div>
+		
+	<!-- Login Here!!! -->
+	<div class="main-agile" >
+		<div class="content-wthree">
+	<form action="login" method="post">
+		<!-- <h2>Login Here</h2> -->
+		<table >
+			<tr>
+				
+				<!-- <td><span></span>   </td> -->
+				<td class="inputs-w3ls">
+					
+					<input type="text" name="username" placeholder="User Name" required>
+				</td>
+			</tr>
+			<tr>
+				<!-- <td><span>   </span>   </td> -->
+				<!-- <td><span></span>   </td> -->
+				<td class="inputs-w3ls">
+					
+					<input type="password" name="password" placeholder="Password" required>
+				</td>
+			</tr>
+			
+			<tr>
+				
+				<td><input type="submit" value="signin"></td><br>
+				<!--<td><input type="reset" value="cancel"></td>-->
+			</tr>
+			<tr>
+				
+				<td><a href="Register.html"><span>New User</span></a></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</div>
+		<div class="footer-w3l">
+		<p class="agileinfo"> Designed and Developed by Computer Science and Engineering Department</p>
+	</div>
+</body>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+</html>
